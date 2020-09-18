@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+struct student
+{
+    int studentid;
+    int age;
+    int marks;
+};
+
+int main()
+{
+    struct student stu;
+    printf("Enter studentid,age,marks:");
+    scanf("%d%d%d",&stu.studentid,&stu.age,&stu.marks);
+    if(stu.age>20&&(stu.marks>=0&&stu.marks<=100))
+    {
+        if(stu.marks>=65)
+        {
+            printf("\n student is qualified");
+            printf("\n studentid:%d",stu.studentid);
+            printf("\n student age:%d",stu.age);
+            printf("\n student marks:%d",stu.marks);
+        }
+        else 
+        printf("the student is not qualified as marks are less than 65");
+    }
+    else
+    printf("the student is not qualified");
+    return 0;
+}    
