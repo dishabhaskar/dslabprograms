@@ -21,11 +21,14 @@ int main(int argc, char **argv)
     scanf("%d",&choice);
     switch(choice)
     {
-        case 1: create(); break;
-        case 2: display();break;
+        case 1: create();
+	        break;
+        case 2: display();
+	        break;
         case 3: printf("Enter the element to be deleted\n");
                 scanf("%d",&ele);
-                delfun(ele); break;
+                delfun(ele);
+		break;
         case 4: insert_front();
                 break;
     }
